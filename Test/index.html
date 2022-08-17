@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="source/scss/style.css">
+    <link rel="stylesheet" href="source/css/normalize.css">
+    <link rel="stylesheet" href="source/libs/slick/slick.css">
+    <link rel="stylesheet" href="source/libs/slick/slick-theme.css">
+    <title>LevelUp</title>
+</head>
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="header-top">
+                <div class="header-logo"><a href="#"><h1>LevelUp</h1></a> </div>
+                <div class="header-item">
+                        <button class="btn" id="btn-modal-window">Заказать</button>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-modal-window">×</span>
+                                <div class="description-modal">
+                                    <h3>Старая цена <span>2000</span></h3>
+                                    <h2>Новая цена <span>1500</span></h2>
+                                </div>
+                                <form class="form" action="#">
+                                    <label for="name">Введите ваше имя</label>
+                                    <input id="name" type="text" placeholder="Ваше имя" class="name" name="name" autocomplete="off" required>
+                                    <label for="number">Введи ваш номер телефона</label>
+                                    <input id="number" type="tel" placeholder="Ваш телефон" class="tel" maxlength="10" pattern="-?[0-9]*(\.[0-9]+)?" required>
+                                    <input type="submit" name="button" class="btn">
+                                </form>
+                                <div class="timer">Осталось: <span id="timer-inp">30</span> мин.</div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section class="jumbotron">
+                <div class="jumbotron-top">
+                    <div class="jumbotron-info">
+                        <img src="source/img/prod.png">
+                       <div class="jumbotron-items">
+                           <ul>
+                               <ol>Характеристика 1</ol>
+                               <ol>Характеристика 2</ol>
+                               <ol>Характеристика 3</ol>
+                           </ul>
+                           <form>
+                               <button type="button" class="btn">Заказать</button>
+                           </form>
+                       </div>
+                    </div>
+                    <div class="jumbotron-video">
+                        <iframe src="https://www.youtube.com/embed/a_FSfzQ2IW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="compound">
+                <div class="compound-left">
+                    <div class="compound-item">
+                        <img src="source/img/1024px-Emoji_u1f41d.svg.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae dignissimos dolores eveniet excepturi expedita fugit in, inventore ipsa magnam maiores nihil officia, provident quae qui quo tempore totam.</p>
+                    </div>
+                    <div class="compound-item">
+                        <img src="source/img/1024px-Emoji_u1f41d.svg.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae dignissimos dolores eveniet excepturi expedita fugit in, inventore ipsa magnam maiores nihil officia, provident quae qui quo tempore totam.</p>
+                    </div>
+                    <div class="compound-item">
+                        <img src="source/img/1024px-Emoji_u1f41d.svg.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae dignissimos dolores eveniet excepturi expedita fugit in, inventore ipsa magnam maiores nihil officia, provident quae qui quo tempore totam.</p>
+                    </div>
+                </div>
+                <div class="compound-center">
+                    <div class="compound-img">
+                        <img src="source/img/prod.png" alt="img"></div>
+                    <form>
+                        <button class="btn">Заказать</button>
+                    </form>
+                </div>
+                <div class="compound-right">
+                    <div class="compound-item">
+                        <img src="source/img/1024px-Emoji_u1f41d.svg.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae dignissimos dolores eveniet excepturi expedita fugit in, inventore ipsa magnam maiores nihil officia, provident quae qui quo tempore totam.</p>
+                    </div>
+                    <div class="compound-item">
+                        <img src="source/img/1024px-Emoji_u1f41d.svg.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae dignissimos dolores eveniet excepturi expedita fugit in, inventore ipsa magnam maiores nihil officia, provident quae qui quo tempore totam.</p>
+                    </div>
+                    <div class="compound-item">
+                        <img src="source/img/1024px-Emoji_u1f41d.svg.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae dignissimos dolores eveniet excepturi expedita fugit in, inventore ipsa magnam maiores nihil officia, provident quae qui quo tempore totam.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="review">
+               <div class="review-slider">
+                   <div class="review-item">
+                       <div class="review-img"><img src="https://worldpodium.ru/sites/default/files/styles/original/public/347817.jpg?itok=_AXGI6KK" alt="Photo"></div>
+                       <div class="review-name"><h2>Name</h2></div>
+                       <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sed!</div>
+                   </div>
+                   <div class="review-item">
+                       <div class="review-img"><img src="https://stromynka7.ru/blog/wp-content/uploads/2022/05/patsientam-kak-perevarivaetsya-dc0b.jpeg" alt="Photo"></div>
+                       <div class="review-name"><h2>Name</h2></div>
+                       <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam autem cumque dolor earum est numquam praesentium ratione repellat temporibus?</div>
+                   </div>
+                   <div class="review-item">
+                       <div class="review-img"><img src="https://icdn.lenta.ru/images/2021/11/18/14/20211118144957904/square_320_41232456751811fc55efe18b224337d6.jpg" alt="Photo"></div>
+                       <div class="review-name"><h2>Name</h2></div>
+                       <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate delectus deleniti dicta distinctio dolor dolorem esse id in, ipsum labore molestiae mollitia nemo perferendis placeat temporibus unde ut vitae! Dolorum, earum expedita impedit maxime placeat possimus! Illo, nam, voluptates?</div>
+                   </div>
+               </div>
+            </section>
+            <section class="promo">
+                <div class="promo-top">
+                    <div class="promo-img"><img src="source/img/doctor.png" alt="doctor"></div>
+                    <div class="promo-item">
+                        <div class="promo-title"><h2>LeveUp</h2></div>
+                        <div class="promo-description">
+                            <ul class="no-list">
+                                <li>Характеристика 1</li>
+                                <li>Характеристика 2</li>
+                                <li>Характеристика 3</li>
+                            </ul>
+                        </div>
+                        <button class="btn">Закзать</button>
+                    </div>
+                </div>
+            </section>
+                            </div>
+    </main>
+
+
+    <script src="source/libs/jquery-3.6.0.min.js"></script>
+    <script src="source/libs/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+#header {
+  border-bottom: 1px solid black;
+  .header-top {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header-logo {
+    }
+    .header-item {
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.6);
+        .modal-content {
+          background-color: #fefefe;
+          margin: 20px auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+          z-index: 99999;
+          border-radius: 5px;
+          .description-modal {
+            text-align: center;
+            color: grey;
+            padding: 25px 0;
+            h3 {
+              span {
+                position: relative;
+                &:before {
+                  content: '';
+                  width: 100%;
+                  height: 0.1em;
+                  background: #db7d76;
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  transform: rotate(-1deg);
+                }
+              }
+            }
+            h2 {
+              @media screen and (max-width: $sm-max) {
+                display: flex;
+                align-items: center;
+              }
+              span {
+                font-size: 60px;
+                color: red;
+              }
+            }
+          }
+          .form {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .name, .tel {
+              cursor: text;
+            }
+            label {
+              margin-bottom: 10px;
+            }
+            input {
+              color: black;
+              margin-bottom: 15px;
+              + input {
+                margin-top: 15px;
+                border: none;
+              }
+            }
+          }
+          .close-modal-window {
+            color: #aaa;
+            float: right;
+            font-size: 60px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+          .timer-items {
+            display: flex;
+            justify-content: center;
+            font-size: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+.jumbotron {
+  .jumbotron-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: $sm-max) {
+      flex-direction: column;
+    }
+    .jumbotron-info {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: $md-max) {
+        flex: 0 0 310px;
+      }
+      @media screen and (max-width: $sm-max) {
+        flex: 0 0 250px;
+      }
+      img {
+        width: 150px;
+        height: 200px;
+      }
+      ul {
+        ol {
+          + ol {
+            margin-top: 15px;
+          }
+        }
+      }
+      .jumbotron-items {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (max-width: $md-max) {
+          flex: 0 0 200px;
+        }
+        .btn {
+          margin-top: 30px;
+          margin-left: 40px;
+        }
+      }
+    }
+    .jumbotron-video {
+      @media screen and (max-width: $md-max) {
+        flex: 0 0 300px;
+      }
+      @media screen and (max-width: $sm-max) {
+        flex: 0 0 150px;
+      }
+    }
+  }
+}
